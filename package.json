@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.0.24"
+  },
+  "scripts": {
+    "serve": "live-server ./public --watch public/*{.html,.css} --no-browser",
+    "build:tailwind": "tailwindcss build --input src/style.css --output public/style.css",
+    "watch:tailwind": "tailwindcss build --input src/style.css --output public/style.css --watch",
+    "watch": "nodemon --ext html,css,js --exec yarn build:tailwind"
+  },
+  "name": "tailwindcss-project",
+  "version": "1.0.0",
+  "description": "A simple project to learn tailwindcss",
+  "main": "index.js",
+  "author": "Adophilus",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.1",
+    "nodemon": "^2.0.15"
+  }
+}
