@@ -1,6 +1,7 @@
 module.exports = {
   content: [
-    "./public/index.html"
+    "./public/bookmarker/index.html",
+    "./public/portfolio/index.html"
   ],
   theme: {
     extend: {
@@ -13,7 +14,7 @@ module.exports = {
       }
     },
     fontFamily: {
-      Poppins: ["Poppins, sans-serif"],
+      Poppins: ["Poppins, sans-serif"]
     },
     container: {
       center: true,
@@ -21,9 +22,9 @@ module.exports = {
       screens: {
         lg: "1124px",
         xl: "1124px",
-        "2xl": "1124px",
-      },
+        "2xl": "1124px"
+      }
     }
   },
-  plugins: [],
+  plugins: []
 }
